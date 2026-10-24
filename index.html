@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Навчальний шаблон української онлайн-газети">
+  <title>ТСН | Онлайн-газета</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="На головну"><span class="brand-mark">ТСН</span><span class="brand-sub">ОНЛАЙН-ГАЗЕТА</span></a>
+    <nav><a href="#news">Новини</a><a href="#about">Про сайт</a></nav>
+    <button class="editor-entry" id="editorEntry" aria-label="Вхід редактора" title="Вхід редактора">●</button>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-label">НОВИНИ • АНАЛІТИКА • СУСПІЛЬСТВО</div>
+      <h1>Головні події<br><span>у фокусі дня</span></h1>
+      <p>Онлайн-газета. Матеріали публікуються редактором сайту.</p>
+    </section>
+    <section class="section-head" id="news"><div><p class="eyebrow">ОСТАННЄ</p><h2>Свіжі матеріали</h2></div><span id="articleCount" class="count"></span></section>
+    <section id="articles" class="article-grid" aria-live="polite"><p>Завантажуємо матеріали…</p></section>
+    <section id="about" class="about"><h2>Про проєкт</h2><p>Це незалежний демонстраційний шаблон онлайн-газети, а не офіційний сайт ТСН або 1+1 media.</p></section>
+  </main>
+  <footer><span>Онлайн-газета • Демонстраційний проєкт</span><span id="year"></span></footer>
+
+  <dialog id="loginDialog" class="modal">
+    <form id="loginForm" class="modal-card">
+      <button type="button" class="close" data-close aria-label="Закрити">×</button>
+      <p class="eyebrow">РЕДАКЦІЯ</p><h2>Вхід редактора</h2>
+      <label>Логін<input name="username" autocomplete="username" required></label>
+      <label>Пароль<input name="password" type="password" autocomplete="current-password" required></label>
+      <button class="button primary" type="submit">Увійти</button><p id="loginMessage" class="message"></p>
+    </form>
+  </dialog>
+  <script src="/app.js"></script>
+</body>
+</html>
